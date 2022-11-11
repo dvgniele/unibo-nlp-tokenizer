@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 surrogates = "*"
 emoji = "*"
+regex = "*"
 
 [dev-packages]
 
