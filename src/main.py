@@ -17,7 +17,7 @@ def tokenize(text: str, regex: list = [], call_emoji_by_name: bool = True):
     emoji_by_name = call_emoji_by_name
 
     re_list = [
-            (r"([<|>}3O~0]?[:;8=BxX%#]['\"]?[-^]?[)(03sSxXDpoOPELÞþb/*\\#&$><}{\[\]@|])|([cCD><][-^]?['\"]?[:;8=BxX%#])",  
+            (r"([<|>}3O~0]?[:;8=BxX%#]['\"]?[-^]?[)(03sSxXDcCpoOPELÞþb/*\\#&$><}{\[\]@|])|([cCD><][-^]?['\"]?[:;8=BxX%#])",  
                                                                     lambda scanner,token:('EMOTICON', token)),
                                                                     
             (r"[:][a-z_-]+[:]",                                     lambda scanner,token:('EMOJI', print_emoji(token))),
@@ -29,7 +29,7 @@ def tokenize(text: str, regex: list = [], call_emoji_by_name: bool = True):
 
             (r"[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?",             lambda scanner,token:('NUMBER', token)),
             (r"=|\+|-|\*|/",                                        lambda scanner,token:('OPERATOR', token)),
-            (r"[a-z_A-Z]+",                                         lambda scanner,token:('LITERAL', token)),
+            (r"[A-zÀ-ú]+",                                         lambda scanner,token:('LITERAL', token)),
             #(r"(?::|;|X|=)(?:-|')?(?:\)|\(|D|P)",                   lambda scanner,token:('EMOTICON', token)),
             (r"[.][.][.]",                                          lambda scanner,token:('PUNCTUATION', token)),
             (r"[.!?,:;/'‘‘’`\"]",                                   lambda scanner,token:('PUNCTUATION', token)),

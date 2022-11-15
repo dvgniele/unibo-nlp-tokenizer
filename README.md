@@ -36,10 +36,10 @@ Nose
 
 Mouth
 ```
-) ( 0 3 s S x X D p o O P E L Þ þ b / * \ # & $ > < } { [ ] @ |
+) ( 0 3 s S x X D c C p o O P E L Þ þ b / * \ # & $ > < } { [ ] @ |
 ```
 ```
-[)(03sSxXDpoOPELÞþb/*\\#&$><}{\[\]@|]
+[)(03sSxXDcCpoOPELÞþb/*\\#&$><}{\[\]@|]
 ```
 
 Reverse
