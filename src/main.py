@@ -12,11 +12,11 @@ def print_emoji(token):
     global emoji_by_name
     return token if emoji_by_name else surrogates.decode(emoji.emojize(token))
 
-def tokenize(text: str, regex: list = [], call_emoji_by_name: bool = True):
+def tokenize(text: str, regex: list = [], regex_start_pos: int = 0, call_emoji_by_name: bool = False):
     global emoji_by_name
     emoji_by_name = call_emoji_by_name
 
-    re_list = [
+    regex_list = [
             (r":([a-z]*[_][a-z]*)*[-]?([a-z]*[_]?[a-z]*)*:",                    lambda scanner, token:('EMOJI', print_emoji(token))),
             (r"([<|>}3O~0]?[:;8=BxX%#]['\"]?[-^]?[)(03sSxXDcCpoOPELÞþb/*\\#&$><}{\[\]@|])|([cCD><][-^]?['\"]?[:;8=BxX%#])",  
                                                                                 lambda scanner, token:('EMOTICON', token)),
@@ -29,14 +29,21 @@ def tokenize(text: str, regex: list = [], call_emoji_by_name: bool = True):
 
             (r"[-+]?[0-9]*(\.|\,)?[0-9]+([eE][-+]?[0-9]+)?(\%|\‰)?",            lambda scanner, token:('NUMBER', token)),
             (r"=|\+|-|\*|/\%\‰",                                                lambda scanner, token:('OPERATOR', token)),
-            (r"([u][n]|[l]|[g][l]|[n]|[c]|[m]|[t]|[v]|[s]|[d]|[a][l][l])[']",             lambda scanner, token:('LITERAL CONTRACTION', token)),
-            (r"[.!?,:;/'‘‘’ˈː– `\"\(\)\[\]\{\}]",                                               lambda scanner, token:('PUNCTUATION', token)),
-            #(r"[.][.][.]",                                                      lambda scanner, token:('PUNCTUATION', token)),
+            (r"([u][n]|[l]|[g][l]|[n]|[c]|[m]|[t]|[v]|[s]|[d]|[a][l][l])[']",   lambda scanner, token:('LITERAL CONTRACTION', token)),
+            (r"[.][.][.]",                                                      lambda scanner, token:('PUNCTUATION', token)),
+            (r"[.!?,:;/'‘‘’ˈː– `\"\(\)\[\]\{\}]",                               lambda scanner, token:('PUNCTUATION', token)),
             (r"[A-zÀ-ú]+",                                                      lambda scanner, token:('LITERAL', token)),
             (r"\s+",                                                            None), # None == skip token.
         ]
 
-    scanner = re.Scanner(regex + re_list)
+    if regex_start_pos > 0:
+        for index, item in enumerate(regex):
+            regex_list.insert((index + regex_start_pos) if regex_start_pos < len(regex_list) else len(regex_list), item)
+    else:
+        for index, item in enumerate(regex):
+            regex_list.insert(index, item)
+    
+    scanner = re.Scanner(regex_list)
 
     demojized_text = emoji.demojize(text) 
     results, unknown_chars = scanner.scan(demojized_text)
@@ -53,9 +60,9 @@ def main():
     text = read('data/input/input.txt')
 
     custom_regex_lst = [
-        (r"[.][.][.]", lambda scanner,token:('PUNCTUATION', token))
+        #(r"[.][.][.]", lambda scanner,token:('TESTONE', token))
     ]
-    tokenized, skipped = tokenize(text = text, regex = custom_regex_lst)
+    tokenized, skipped = tokenize(text = text, regex = custom_regex_lst, regex_start_pos=0)
 
     log('TOKENIZED  ')
     print('text:\t' + text + '\n')
