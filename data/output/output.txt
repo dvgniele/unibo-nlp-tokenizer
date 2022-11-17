@@ -1,0 +1,6 @@
+('LITERAL', 'prova')
+('LITERAL', 'emoji')
+('EMOJI', ':raised_back_of_hand_dark_skin_tone:')
+('LITERAL', 'ed')
+('LITERAL', 'emoticons')
+('EMOTICON', ':3')

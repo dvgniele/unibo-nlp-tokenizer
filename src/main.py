@@ -27,12 +27,12 @@ def tokenize(text: str, regex: list = [], call_emoji_by_name: bool = True):
                 "|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])",    
                                                                                 lambda scanner, token:('DOMAIN', token)),
 
-            (r"[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?",                         lambda scanner, token:('NUMBER', token)),
-            (r"=|\+|-|\*|/",                                                    lambda scanner, token:('OPERATOR', token)),
-            (r"([u][n]|[l]|[g][l]|[n]|[c]|[m]|[t]|[v]|[s]|[d])[']",             lambda scanner, token:('LITERAL CONTRAPTION', token)),
+            (r"[-+]?[0-9]*(\.|\,)?[0-9]+([eE][-+]?[0-9]+)?(\%|\‰)?",            lambda scanner, token:('NUMBER', token)),
+            (r"=|\+|-|\*|/\%\‰",                                                lambda scanner, token:('OPERATOR', token)),
+            (r"([u][n]|[l]|[g][l]|[n]|[c]|[m]|[t]|[v]|[s]|[d]|[a][l][l])[']",             lambda scanner, token:('LITERAL CONTRACTION', token)),
+            (r"[.!?,:;/'‘‘’ˈː– `\"\(\)\[\]\{\}]",                                               lambda scanner, token:('PUNCTUATION', token)),
+            #(r"[.][.][.]",                                                      lambda scanner, token:('PUNCTUATION', token)),
             (r"[A-zÀ-ú]+",                                                      lambda scanner, token:('LITERAL', token)),
-            (r"[.][.][.]",                                                      lambda scanner, token:('PUNCTUATION', token)),
-            (r"[.!?,:;/'‘‘’`\"]",                                               lambda scanner, token:('PUNCTUATION', token)),
             (r"\s+",                                                            None), # None == skip token.
         ]
 
@@ -60,8 +60,14 @@ def main():
     log('TOKENIZED  ')
     print('text:\t' + text + '\n')
 
+
+    file = open('data/output/output.txt', 'w')
+
     for item in tokenized:
+        file.write(str(item) + '\n')
         print(item)
+
+    file.close()
 
     log('SKIPPED')
     for item in skipped:
