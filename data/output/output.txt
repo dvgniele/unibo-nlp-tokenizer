@@ -6,3 +6,4 @@
 ('LITERAL', 'emoticons')
 ('EMOTICON', ':3')
 ('EMOTICON', ':]')
+('DOMAIN', 'dawdawd@dwlwd.it')
