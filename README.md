@@ -96,9 +96,10 @@ hat? eye tear? nose? mouth || reverse nose? tear? && eye
     "config": [
         {
             "name":"3 CONSECUTIVE DOTS",
-            "regex":"[.][.][.]"
+            "regex":"[.][.][.]",
+            "index": 2
         },
-                {
+        {
             "name":"4 CONSECUTIVE DOTS",
             "regex":"[.][.][.][.]"
         }
@@ -106,3 +107,4 @@ hat? eye tear? nose? mouth || reverse nose? tear? && eye
 }
 
 ```
+> The ```index``` argument is optional, and can be used to choose the priority to recognize the ```type```. It can be omitted if there is no particular preference, in that case, those types will be sorted by reading order. Indexes < 1 will be automatically set to -1, thus the chosen priority will be lost. This is because the first ```type``` MUST be the one capable of recognizing emojis.
