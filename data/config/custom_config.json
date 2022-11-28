@@ -1,5 +1,8 @@
 {
     "config": [
-
+        {
+            "name":"testoneee",
+            "regex":"[.][.][.]"
+        }
     ]
 }

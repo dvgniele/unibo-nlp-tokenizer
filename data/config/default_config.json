@@ -17,10 +17,6 @@
             "regex":"=|\\+|-|\\*|/\\%\\\u2030"
         },
         {
-            "name":"LITERAL CONTRACTION",
-            "regex":"([u][n]|[l]|[g][l]|[n]|[c]|[m]|[t]|[v]|[s]|[d]|[a][l][l])[']"
-        },
-        {
             "name":"PUNCTUATION",
             "regex":"[.][.][.]"
         },

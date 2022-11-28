@@ -43,7 +43,7 @@ def tokenize(
             item,
         )
 
-    if custom_regex_start_pos > 0:
+    if custom_regex_start_pos > 1:
         for index, item in enumerate(custom_regex):
             regex_list.insert(
                 (index + custom_regex_start_pos)
@@ -67,6 +67,23 @@ def tokenize(
 def log(text):
     separator = "\t####\t"
     print("\n" + separator + text + separator + "\n")
+
+
+def export_tokens(output, text):
+    output.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
+    output.write("<tokenized>\n")
+
+    for item in text:
+        output.write("\t<item>\n")
+        output.write("\t\t<type>")
+        output.write(f"{item[0].lower()}")
+        output.write("</type>\n")
+        output.write("\t\t<token>")
+        output.write(f"{item[1]}")
+        output.write("</token>\n")
+        output.write("\t</item>\n")
+
+    output.write("</tokenized>\n")
 
 
 def main():
@@ -111,10 +128,11 @@ def main():
     log("TOKENIZED  ")
     print("text:\t" + text + "\n")
 
-    file = open("data/output/output.txt", "w")
+    file = open("data/output/output.xml", "w")
+
+    export_tokens(file, tokenized)
 
     for item in tokenized:
-        file.write(str(item) + "\n")
         print(item)
 
     file.close()
@@ -130,4 +148,3 @@ def test():
 
 if __name__ == "__main__":
     main()
-    # test()
