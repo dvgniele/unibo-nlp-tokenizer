@@ -33,7 +33,11 @@
 		<token>:]</token>
 	</item>
 	<item>
-		<type>domain</type>
+		<type>email domain</type>
 		<token>dawdawd@dwlwd.it</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>http://www.ciaone.it/ada_adwda/hehehe?gr=dd</token>
 	</item>
 </tokenized>

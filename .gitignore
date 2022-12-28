@@ -1,1 +1,8 @@
 src/drafts.py
+docs/*.aux
+docs/*.fdb_latexmk
+docs/*.fls
+docs/*.log
+docs/*.out
+docs/*.gz
+docs/*.toc
