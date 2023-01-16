@@ -130,7 +130,10 @@ def main():
     text = read("data/input/input.txt")
 
     tokenized, skipped = tokenize(
-        text=text, default_regex=default_regex_config, custom_regex=custom_regex_config
+        text=text,
+        default_regex=default_regex_config,
+        custom_regex=custom_regex_config,
+        call_emoji_by_name=True,
     )
 
     log("TOKENIZED  ")
