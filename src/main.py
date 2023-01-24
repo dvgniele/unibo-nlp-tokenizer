@@ -127,7 +127,7 @@ def main():
             }
         )
 
-    text = read("data/input/input.txt")
+    text = read("data/input/miscellaneous.txt")
 
     tokenized, skipped = tokenize(
         text=text,
