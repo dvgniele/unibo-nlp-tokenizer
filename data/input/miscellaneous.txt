@@ -3,4 +3,19 @@ emoji test: 😶‍🌫️ 🧙🏼‍♂️
 domain test: student.email@studio.unibo.it
 emoticon test: :-) :') XD
 number and operator test: 4.20 +69 * -96 4.20e-69
-puntuation test: : $ ¿ ? § « » ω ⊙ ¤ ° ℃ ℉ € ¥ £ ¢ ¡ @ & _ ( ) = + ! ' % / . , " ‘ ‘ ’ ˈ * < > ^ ; ÷ \ | ¦ ¬ × ¶ ¯ ≠ ~ ≈ ± ʼ › ‹ ‰ „ … • ː –
+puntuation test: : $
+¿
+?
+§
+«
+»
+=
++
+!
+'
+%/
+* 
+<
+>
+^
+;

@@ -1,0 +1,9 @@
+EMOTICON: :) ;) :D :P :( :o :* B| :-/ :-D :-)
+EMOJI TEST: 😶‍🌫️ 🧙🏼‍♂️ 🤣🤚🏿🧔🏽‍♀️
+WEBSITE DOMAIN: unibo.it https://www.google.com http://www.facebook.com https://www.twitter.com http://www.linkedin.com
+EMAIL DOMAIN: daniele.perrella2@studio.unibo.it john.doe@example.com johndoe@example.co.uk jane.doe@gmail.com janedoe@yahoo.com
+NUMBER: 123 45.67 -89.0 3,456.789 1.23e-4 5.6E7 99.9% 50‰
+OPERATOR: = + - * /\
+PUNCTUATION: ... !!! ?? $@%^&()
+PUNCTUATION: [ ] { } : ¿? § «» ω ⊙ ¤ ° ℃ ℉ € ¥ £ ¢ ¡ @ _ () = + ! ' % / , " ‘ ’ ʼ * < > ^ ; ÷ | ¦ ¬ × ¶ ¯ ≠ ~ ≈ ± ʼ› ʼ‹ ‰ „ … • ː –
+LITERAL:  à è é ì í ò ó ù ú Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida ipsum ac dui varius commodo. Donec ac turpis quis augue euismod congue id id orci. Vestibulum consectetur neque vel massa luctus, id ultricies lorem rhoncus. Phasellus in eros varius, eleifend orci non, hendrerit lectus. Nullam vel semper velit. Fusce vel augue suscipit, lobortis dolor non, interdum massa. Sed commodo libero nec velit vestibulum tincidunt. Suspendisse nec sapien et magna commodo convallis non non ex. Mauris dictum hendrerit diam ac blandit. Nam vel feugiat eros. 

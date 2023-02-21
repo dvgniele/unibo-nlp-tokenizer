@@ -3,11 +3,11 @@ import surrogates
 import emoji
 import json
 
-emoji_by_name = True
+emoji_by_name = False
 
 
 def read(filename):
-    f = open(filename, "r").read()
+    f = open(filename, "r", encoding="UTF-8").read()
     return f
 
 
@@ -74,6 +74,7 @@ def log(text):
 
 
 def export_tokens(output, text):
+    print("\n\n\tEXPORTING\n\n")
     output.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
     output.write("<tokenized>\n")
 
@@ -127,7 +128,7 @@ def main():
             }
         )
 
-    text = read("data/input/miscellaneous.txt")
+    text = read("data/input/test.txt")
 
     tokenized, skipped = tokenize(
         text=text,
@@ -139,14 +140,13 @@ def main():
     log("TOKENIZED  ")
     print("text:\t" + text + "\n")
 
-    file = open("data/output/output.xml", "w")
+    file = open("data/output/output.xml", "w", encoding="UTF-8")
 
     export_tokens(file, tokenized)
+    file.close()
 
     for item in tokenized:
         print(item)
-
-    file.close()
 
     log("SKIPPED")
     for item in skipped:

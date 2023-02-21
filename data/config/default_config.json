@@ -6,7 +6,7 @@
         },
         {
             "name": "WEBSITE DOMAIN",
-            "regex": "http[s]?://[A-z]+([.-_][A-z]+)+"
+            "regex": "(https?://)?(www\\.)?[\\w-]+\\.[\\w.-]+(/[/?%&=]*)?"
         },
         {
             "name":"EMAIL DOMAIN",
@@ -18,7 +18,7 @@
         },
         {
             "name":"OPERATOR",
-            "regex":"=|\\+|-|\\*|/\\"
+            "regex": "=|\\+|-|\\*|\\/\\\\"
         },
         {
             "name":"PUNCTUATION",
@@ -26,11 +26,11 @@
         },
         {
             "name":"PUNCTUATION",
-            "regex":"[\\[\\]\\{\\}\u003a\u0024\u00bf\u003f\u00a7\u00ab\u00bb\u03c9\u2299\u00a4\u00b0\u2103\u2109\u20ac\u00a5\u00a3\u00a2\u00a1\u0040\u0026\u005f\u0028\u0029\u003d\u002b\u0021\u0027\u0025\u002f\u002e\u002c\u0022\u2018\u2018\u2019\u02c8\u002a\u003c\u003e\u005e\u003b\u00f7\u005c\u007c\u00a6\u00ac\u00d7\u00b6\u00af\u2260\u007e\u2248\u00b1\u02bc\u203a\u2039\u2030\u201e\u2026\u2022\u02d0\u2013]"
+            "regex": "[\\[\\]\\{\\}\u003a\u0024\u00bf\u003f\u00a7\u00ab\u00bb\u03c9\u2299\u00a4\u00b0\u2103\u2109\u20ac\u00a5\u00a3\u00a2\u00a1\u0040\u0026\u005f\u0028\u0029\u003d\u002b\u0021\u0027\u0025\u002f\u002e\u002c\u0022\u2018\u2018\u2019\u02c8\u002a\u003c\u003e\u005e\u003b\u00f7\u005c\u007c\u00a6\u00ac\u00d7\u00b6\u00af\u2260\u007e\u2248\u00b1\u02bc\u203a\u2039\u2030\u201e\u2026\u2022\u02d0\u2013]"
         },
         {
             "name":"LITERAL",
-            "regex":"[A-zÀ-ú]+"
+            "regex":"[A-Za-z\u00e0\u00e8\u00e9\u00ec\u00ed\u00f2\u00f3\u00f9\u00fa\u00c0\u00c8\u00c9\u00cc\u00cd\u00d2\u00d3\u00d9\u00da]+"
         }
     ]
 }

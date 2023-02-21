@@ -2,31 +2,63 @@
 <tokenized>
 	<item>
 		<type>literal</type>
-		<token>literal</token>
-	</item>
-	<item>
-		<type>literal</type>
-		<token>test</token>
+		<token>EMOTICON</token>
 	</item>
 	<item>
 		<type>punctuation</type>
 		<token>:</token>
 	</item>
 	<item>
-		<type>literal</type>
-		<token>test</token>
+		<type>emoticon</type>
+		<token>:)</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>;)</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>:D</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>:P</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>:(</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>:o</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>:*</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>B|</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>:-/</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>:-D</token>
+	</item>
+	<item>
+		<type>emoticon</type>
+		<token>:-)</token>
 	</item>
 	<item>
 		<type>literal</type>
-		<token>tEsTeSt</token>
+		<token>EMOJI</token>
 	</item>
 	<item>
 		<type>literal</type>
-		<token>emoji</token>
-	</item>
-	<item>
-		<type>literal</type>
-		<token>test</token>
+		<token>TEST</token>
 	</item>
 	<item>
 		<type>punctuation</type>
@@ -41,60 +73,96 @@
 		<token>:man_mage_medium-light_skin_tone:</token>
 	</item>
 	<item>
-		<type>literal</type>
-		<token>domain</token>
+		<type>emoji</type>
+		<token>:rolling_on_the_floor_laughing:</token>
+	</item>
+	<item>
+		<type>emoji</type>
+		<token>:raised_back_of_hand_dark_skin_tone:</token>
+	</item>
+	<item>
+		<type>emoji</type>
+		<token>:woman_medium_skin_tone_beard:</token>
 	</item>
 	<item>
 		<type>literal</type>
-		<token>test</token>
+		<token>WEBSITE</token>
+	</item>
+	<item>
+		<type>literal</type>
+		<token>DOMAIN</token>
 	</item>
 	<item>
 		<type>punctuation</type>
 		<token>:</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>unibo.it</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>https://www.google.com</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>http://www.facebook.com</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>https://www.twitter.com</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>http://www.linkedin.com</token>
+	</item>
+	<item>
+		<type>literal</type>
+		<token>EMAIL</token>
+	</item>
+	<item>
+		<type>literal</type>
+		<token>DOMAIN</token>
+	</item>
+	<item>
+		<type>punctuation</type>
+		<token>:</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>daniele.perrella2</token>
 	</item>
 	<item>
 		<type>email domain</type>
-		<token>student.email@studio.unibo.it</token>
+		<token>@studio.unibo.it</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>john.doe</token>
+	</item>
+	<item>
+		<type>email domain</type>
+		<token>@example.com</token>
+	</item>
+	<item>
+		<type>email domain</type>
+		<token>johndoe@example.co.uk</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>jane.doe</token>
+	</item>
+	<item>
+		<type>email domain</type>
+		<token>@gmail.com</token>
+	</item>
+	<item>
+		<type>email domain</type>
+		<token>janedoe@yahoo.com</token>
 	</item>
 	<item>
 		<type>literal</type>
-		<token>emoticon</token>
-	</item>
-	<item>
-		<type>literal</type>
-		<token>test</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>:</token>
-	</item>
-	<item>
-		<type>emoticon</type>
-		<token>:-)</token>
-	</item>
-	<item>
-		<type>emoticon</type>
-		<token>:')</token>
-	</item>
-	<item>
-		<type>emoticon</type>
-		<token>XD</token>
-	</item>
-	<item>
-		<type>literal</type>
-		<token>number</token>
-	</item>
-	<item>
-		<type>literal</type>
-		<token>and</token>
-	</item>
-	<item>
-		<type>literal</type>
-		<token>operator</token>
-	</item>
-	<item>
-		<type>literal</type>
-		<token>test</token>
+		<token>NUMBER</token>
 	</item>
 	<item>
 		<type>punctuation</type>
@@ -102,282 +170,34 @@
 	</item>
 	<item>
 		<type>number</type>
-		<token>4.20</token>
+		<token>123</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>45.67</token>
+	</item>
+	<item>
+		<type>website domain</type>
+		<token>-89.0</token>
 	</item>
 	<item>
 		<type>number</type>
-		<token>+69</token>
-	</item>
-	<item>
-		<type>operator</type>
-		<token>*</token>
+		<token>3,456</token>
 	</item>
 	<item>
 		<type>number</type>
-		<token>-96</token>
+		<token>.789</token>
 	</item>
 	<item>
-		<type>number</type>
-		<token>4.20e-69</token>
+		<type>website domain</type>
+		<token>1.23e-4</token>
 	</item>
 	<item>
-		<type>literal</type>
-		<token>puntuation</token>
+		<type>website domain</type>
+		<token>5.6E7</token>
 	</item>
 	<item>
-		<type>literal</type>
-		<token>test</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>:</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>:</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>$</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>¿</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>?</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>§</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>«</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>»</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>ω</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>⊙</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>¤</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>°</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>℃</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>℉</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>€</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>¥</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>£</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>¢</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>¡</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>@</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>&</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>_</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>(</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>)</token>
-	</item>
-	<item>
-		<type>operator</type>
-		<token>=</token>
-	</item>
-	<item>
-		<type>operator</type>
-		<token>+</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>!</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>'</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>%</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>/</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>.</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>,</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>"</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>‘</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>‘</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>’</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>ˈ</token>
-	</item>
-	<item>
-		<type>operator</type>
-		<token>*</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token><</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>></token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>^</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>;</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>÷</token>
-	</item>
-	<item>
-		<type>literal</type>
-		<token>\</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>|</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>¦</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>¬</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>×</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>¶</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>¯</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>≠</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>~</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>≈</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>±</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>ʼ</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>›</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>‹</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>‰</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>„</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>…</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>•</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>ː</token>
-	</item>
-	<item>
-		<type>punctuation</type>
-		<token>–</token>
+		<type>website domain</type>
+		<token>99.9</token>
 	</item>
 </tokenized>
